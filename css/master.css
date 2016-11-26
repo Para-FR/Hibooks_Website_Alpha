@@ -1,0 +1,135 @@
+@@charset "UTF-8";
+
+/* font-family: 'Raleway', sans-serif; */
+/* Blanc : FFFEFC */
+/* Gris Clair: E2E3DF */
+/* Gris : 515B5E */
+/* Gris Foncé : 2E3233 */
+/* Vert Clair : CAF200 */
+
+
+body, html {
+  padding: 0;
+  margin: 0;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+a, a:hover {
+  text-decoration: none;
+
+}
+
+/* header */
+
+.separator {
+  height: 3px;
+  width: 10%;
+  border: none;
+  box-shadow: none;
+  background-color: #CAF200;
+
+}
+
+.header {
+  background-color: #515B5E;
+  height: 70px;
+  line-height: 70px;
+}
+
+.logo {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  float: left;
+}
+.logo:hover {
+  color: #CAF200;
+}
+
+.menu {
+  float: right;
+}
+
+.menu a {
+  color: #ffffff;
+  margin-right: 20px;
+}
+
+.menu a:hover {
+  color: #CAF200;
+}
+.container-fluid {
+  padding: 0;
+
+}
+/* bannière*/
+.banner {
+  width: 100%;
+  max-width: 100%;
+}
+.ban {
+  width: 100%;
+  max-width: 100%;
+}
+
+.ban {
+  position: relative;
+}
+
+.ban img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.inner-banner {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.inner-banner h1 {
+  color: #ffffff;
+  text-shadow: 1px 1px 20px #000000;
+}
+
+.inner-banner .btn-custom {
+  background-color: #515B5E;
+  color: #ffffff;
+}
+
+.inner-banner .btn-custom:hover {
+  background-color: #2E3233;
+
+}
+
+
+/* about */
+#about {
+  text-align: center;
+  padding-top: 10%;
+}
+
+.about article {
+  padding-top: 10%;
+
+}
+
+.about article h2 {
+  text-align: center;
+
+}
+
+/* portfolio */
+.portfolio {
+  background-color: #eeeeee;
+}
+
+#portfolio {
+  text-align: center;
+}
+/* contact */
