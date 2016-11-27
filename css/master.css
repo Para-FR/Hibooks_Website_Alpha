@@ -21,6 +21,16 @@ a, a:hover {
 
 }
 
+.btn-custom {
+  background-color: #515B5E;
+  color: #ffffff;
+}
+
+.btn-custom:hover {
+  background-color: #2E3233;
+  color: #CAF200;
+}
+
 /* header */
 
 .separator {
@@ -96,6 +106,9 @@ a, a:hover {
   color: #ffffff;
   text-shadow: 1px 1px 20px #000000;
 }
+.inner-banner a {
+  text-decoration: none;
+}
 
 .inner-banner .btn-custom {
   background-color: #515B5E;
@@ -132,4 +145,69 @@ a, a:hover {
 #portfolio {
   text-align: center;
 }
+
+.portfolio .item-folio {
+  height: 100px;
+  background-color: #2E3233;
+}
+
+.portfolio .item-folio-1 {
+  align-content: center;
+  height: 400px;
+  width: 300px;
+  background-image: url(../imgs/livre-1.jpg);
+  background-repeat: no-repeat;
+  margin-bottom: 7px;
+  margin-left: 50px;
+}
+
+.portfolio .item-folio-2 {
+  align-content: center;
+  height: 400px;
+  width: 300px;
+  background-image: url(../imgs/livre-2.jpg);
+  background-repeat: no-repeat;
+  margin-bottom: 7px;
+  margin-left: 50px;
+}
 /* contact */
+
+.footer {
+  background-color: #2E3233;
+  height: 550px;
+}
+
+.footer p {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#contact {
+  color: #ffffff;
+  text-align: center;
+}
+
+.formulaireContact {
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+  }
+
+input[type=text] {
+  height: 50px;
+  width: 500px;
+  border: none;
+}
+input[type=mail] {
+  height: 50px;
+  width: 500px;
+  border: none;
+}
+
+input[type=password] {
+  height: 50px;
+  width: 500px;
+  border: none;
+}
+/* Login */

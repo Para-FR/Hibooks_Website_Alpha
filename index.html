@@ -6,6 +6,7 @@
     <!-- css -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/animate.css">
 
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600" rel="stylesheet">
@@ -23,7 +24,9 @@
           <a href="#about"> A Propos</a>
           <a href="#portfolio"> Portfolio</a>
           <a href="#contact"> Contact</a>
+
         </nav>
+
       </div>
     </header>
     <!-- end header -->
@@ -35,7 +38,7 @@
         </div>
         <div class="inner-banner">
           <h1> Bienvenue !</h1>
-          <button class="btn btn-custom">Contactez nous !</button>
+          <button class="btn btn-custom">Inscrivez vous !</button>
         </div>
     </section>
     <!-- end bannière -->
@@ -74,28 +77,24 @@
       <div class="container">
         <h2 id="portfolio">Notre sélection de la semaine</h2>
         <hr class="separator">
-        <article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item-folio">
+        <article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item-folio-1">
 
         </article>
-        <article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item-folio">
+        <article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item-folio-2">
 
         </article>
-        <article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item-folio">
+        <article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item-folio-1">
 
         </article>
-        <article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item-folio">
+        <article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item-folio-2">
 
         </article>
-        <article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item-folio">
+        <article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item-folio-1">
 
         </article>
-        <article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item-folio">
+        <article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item-folio-2">
 
         </article>
-        <article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item-folio">
-
-        </article>
-        <article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item-folio">
       </div>
     </section>
     <!-- end Portfolio -->
@@ -103,33 +102,35 @@
     <!-- Footer / Contact -->
     <footer class="container-fluid footer">
     <div class="container">
-      <div class="col-md-5">
+      <h2 id="contact">Inscrivez-vous !</h2>
+      <hr class="separator">
           <div class="form-area">
-            <form role="form">
+            <form class="formulaireContact" role="form">
                   <br style="clear:both">
-                      <h3 style="margin-bottom: 25px; text-align: center;">Contact Form</h3>
     				              <div class="form-group">
-						                      <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+						                      <input type="text" class="form-control" id="name" name="name" placeholder="Nom" required>
 					                </div>
+                          <div class="form-group">
+						                      <input type="text" class="form-control" id="second-name" name="second-name" placeholder="Prénom" required>
+					                </div>
+
+                          <div class="form-group">
+                                  <input type="text" class="form-control" id="account" name="account" placeholder="Nom de Compte" required>
+                          </div>
+
 					                <div class="form-group">
 						                      <input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
 					                </div>
 					                <div class="form-group">
-						                      <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Mobile Number" required>
+						                      <input type="password" class="form-control" id="psswd" name="psswd" placeholder="Mot de Passe" required>
 					                </div>
-					                <div class="form-group">
-						                      <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
-					                </div>
-                          <div class="form-group">
-                            <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="140" rows="7"></textarea>
-                            <span class="help-block"><p id="characterLeft" class="help-block ">You have reached the limit</p></span>
-                          </div>
 
-                          <button type="button" id="submit" name="submit" class="btn btn-primary pull-right">Submit Form</button>
+                          <button type="button" id="submit" name="submit" class="btn btn-custom pull-right">S'inscrire sur Hibooks !</button>
         </form>
       </div>
     </div>
-  </div>
+    <p> Hibboks 2016 Copyright - Design & Code by Para.</p>
+
 </footer>
     <!-- End Footer / Contact -->
   </body>
