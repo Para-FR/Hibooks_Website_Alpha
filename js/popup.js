@@ -1,8 +1,8 @@
 /**
  ** POPUP by Stratis BAKAS
  */
- 
-var popup = (function() 
+
+/*var popup = (function()
 {
 
 	function init() {
@@ -21,12 +21,12 @@ var popup = (function()
 
 			// evenement qui appelle la fonction removeModal()
 			function removeModalHandler() {
-				removeModal(); 
+				removeModal();
 			}
 
 			// au clic sur le bouton on ajoute la class .show a la div de la popup qui permet au CSS3 de prendre le relai
 			$(el).click(function()
-			{	
+			{
 				modal.addClass('show');
 				overlay.unbind("click");
 				// on ajoute sur l'overlay la fonction qui permet de fermer la popup
@@ -45,4 +45,27 @@ var popup = (function()
 
 	init();
 
-})();
+})();*/
+$(document).ready(function(){
+
+    // on va chercher l'élement avec la classe suivante
+
+    //on va faire disparaître le formulaire d'inscription
+
+    // $(".signin").click(function(){
+    //   console.log("Je suis la");
+    //   $(".signinmod").css(display: block);
+    //   $(".loginmod").css(display: none);
+    // });
+    //
+    // $(".login").click(function(){
+    //   $(".loginmod").css(display: block);
+    //   $(".signinmod").css(display: none);
+    // });
+function hiddenLogin(){
+  console.log('blblblblblbllb');
+  document.getElementsByClassName('signinmod').style.display = "block";
+  document.getElementsByClassName('loginmod').style.display = "none";
+}
+
+});

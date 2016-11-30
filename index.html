@@ -14,11 +14,27 @@
 
     <!--javascript -->
     <script src="js/modernizr.custom.js"></script>
+    <script src="js/popup.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
   </head>
 
   <!-- Contenu du Site -->
   <body>
+
+    <!-- header -->
+    <header class="container-fluid header">
+      <div class="container">
+        <a href="#" class="logo">test</a>
+        <nav class="menu">
+          <a href="#"> Accueil</a>
+          <a href="#about"> A Propos</a>
+          <a href="#portfolio"> Portfolio</a>
+          <a href="#contact"> Contact</a>
+        </nav>
+
+      </div>
+    </header>
+    <!-- end header -->
 
     <!-- Contenu de la Popup -->
     <div class="modal" id="popup">
@@ -49,21 +65,6 @@
         <div class="close"></div>
 			</div>
 		</div>
-    <!-- header -->
-    <header class="container-fluid header">
-      <div class="container">
-        <a href="#" class="logo"> Hibooks</a>
-        <nav class="menu">
-          <a href="#"> Accueil</a>
-          <a href="#about"> A Propos</a>
-          <a href="#portfolio"> Portfolio</a>
-          <a href="#contact"> Contact</a>
-        </nav>
-
-      </div>
-    </header>
-    <!-- end header -->
-
     <!-- bannière -->
     <section class="container-fluid banner">
         <div class="ban">
@@ -71,7 +72,7 @@
         </div>
         <div class="inner-banner">
           <h1> Bienvenue !</h1>
-          <form class="loginmod" role="form">
+          <form class="loginmod" id="loginmod" role="form">
             <div class="form-group">
                 <br style="clear:both">
                 <input type="text" class="form-control" id="ident" name="ident" placeholder="Identifiant" required>
@@ -80,8 +81,30 @@
                 <input type="password" class="form-control" id="psswd" name="psswd" placeholder="Mot de Passe" required>
             </div>
           </form>
-          <button class="btn btn-custom">Se connecter</button>
-          <button class="btn btn-custom popup-button" data-modal="popup">S'inscrire</button>
+          <form class="signinmod" id="signinmod" action="index.php" method="post">
+            <div class="form-group">
+              <input type="text" class="form-control" name="Pseudo" placeholder="Entrez votre Pseudo" required>
+            </div>
+            <div class="form-group">
+              <input type="mail" class="form-control" name="email" placeholder="Entrez votre adresse mail" required>
+            </div>
+            <div class="form-group">
+              <input type="radio" name="Sexe" value="Homme" checked>Homme
+              <input type="radio" name="Sexe" value="Femme">Femme
+            </div>
+            <div class="form-group">
+              <input type="date" class="form-control" id="date" name="" value="">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="psswd" name="MotdePasse" placeholder="Mot de Passe" required>
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="confirmpsswd" name="MotdePasse" placeholder="Confirmez votre Mot de Passe" required>
+            </div>
+          </form>
+
+          <button class="btn btn-custom login" onclick="hiddenSignin()">Se connecter</button>
+          <button class="btn btn-custom signin" onclick="hiddenLogin()">S'inscrire</button>
         </div>
     </section>
     <!-- end bannière -->
@@ -177,13 +200,23 @@
     <!-- End Footer / Contact -->
     <!-- Javascript-->
     <!-- Le script qui crée la popup -->
-    <script src="js/popup.js"></script>
+
 
     <!-- Pour l'effet blur -->
     <!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
     <script>
       // this is important for IEs
       var polyfilter_scriptpath = '/js/';
+      function hiddenLogin(){
+        console.log('blblblblblbllb');
+        document.getElementById('signinmod').style.display = "block";
+        document.getElementById('loginmod').style.display = "none";
+      }
+      function hiddenSignin(){
+        console.log("Ta mère le js fdp de merde");
+        document.getElementById('signinmod').style.display = "none";
+        document.getElementById('loginmod').style.display = "block";
+      }
     </script>
     <script src="js/cssParser.js"></script>
     <script src="js/css-filters-polyfill.js"></script>

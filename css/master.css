@@ -51,14 +51,16 @@ a, a:hover {
 }
 
 .logo {
-  color: #ffffff;
+  background-image: url(../imgs/emoticons-2.png);
+  /*color: #ffffff;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 1px;
-  float: left;
+  float: left;*/
 }
 .logo:hover {
-  color: #2E3233;
+  background-image: url(../imgs/emoticons-1.png);
+  /*color: #2E3233;*/
 }
 
 .menu {
@@ -241,7 +243,35 @@ input[type=password] {
   text-align: center;
 }
 
+
+
 /* S'inscrire */
+.signinmod{
+  display : none;
+}
+.signinmod input[type=date] {
+  width: 220px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.signinmod input[type=mail] {
+  width: 220px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.signinmod input[type=password] {
+  width: 220px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.signinmod input[type=text] {
+  width: 220px;
+  margin: 0 auto;
+  text-align: center;
+}
 
 /*input {
 	-webkit-border-radius: 2px;
