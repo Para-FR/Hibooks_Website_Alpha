@@ -21,6 +21,11 @@
   <body>
 
     <!-- Contenu de la Popup -->
+    <?php
+    if (!empty($_POST)) {
+      $error = $arrayName = array();
+    } ?>
+
     <div class="modal" id="popup">
 			<div class="popup-content">
 				<h2>S'inscrire sur Hibooks</h2>
@@ -45,8 +50,9 @@
             <label><input type="checkbox" id="conditions" value="">J'accepte les conditions générales d'utilisation</label>
           </div>
           <button type="submit" name="test" class="btn btn-signin">S'inscrire</button>
+
+					<div class="close"></div>
 				</div>
-        <div class="close"></div>
 			</div>
 		</div>
     <!-- header -->
